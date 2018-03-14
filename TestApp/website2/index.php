@@ -8,8 +8,6 @@
 
 <div class="container">
 <h1> Server & File Info </h1>
-
- 
     <ul class="list-group">
     	
     	  <li class="list-group-item">
@@ -26,7 +24,7 @@
 
     </ul>
 </div>
-
+<div></div>
 
 </body>
 </html>
