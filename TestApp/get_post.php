@@ -1,15 +1,12 @@
 <?php
-//if(isset($_GET['name']))
+
+
+if(isset($_GET['name']))
 {
-	// echo $_GET['name'];
-	// echo '<br>';
-	// echo $_GET['Email'];
+$name =  htmlentities($_GET['name']);
 }
 
-if(isset($_POST['name']))
-{
-echo $_POST['name'];
-}
+// echo $_SERVER['QUERY_STRING'];
 
 ?>
 
@@ -20,7 +17,7 @@ echo $_POST['name'];
 </head>
 <body>
 
-<form method="POST" action="get_post.php">
+<form method="GET" action="get_post.php">
 	<div>
 		<label>Name</label>
 		<input type="text" name="name">
@@ -31,5 +28,11 @@ echo $_POST['name'];
 	</div>
 	<input type="submit" value="submit">
 </form>
+
+<ul>
+	<li><a href="get_post.php?name=Brad">Brad</a></li>
+	<li><a href="get_post.php?name=Vish">Vish</a></li>
+</ul>
+<?php  echo "{$name}'s profile " ?> 
 </body>
 </html>

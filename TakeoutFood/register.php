@@ -18,7 +18,7 @@
   	<div class="form-group row">
   	  <label for = "username" class="col-sm-2 col-form-label"><strong>Username</strong></label>
       <div class="col-sm-6">
-  	  <input type="text" id="username" name="username" placeholder="Username" class="form-control" minlength="5" maxlength="20">
+  	  <input type="text" id="username" name="username" placeholder="Username" class="form-control" minlength="5" maxlength="20" value="<?php if (isset($_POST['username'])) echo $_POST['username']; ?>">
       </div>
   	</div>
 

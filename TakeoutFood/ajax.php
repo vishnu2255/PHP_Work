@@ -7,6 +7,7 @@ if($country==1)
 echo "<select>
 
      <option>Alaska</option>
+     <option>Alaska</option>
 		<option >Alabama</option>
 		<option >Arkansas</option>
 		<option >Arizona</option>
